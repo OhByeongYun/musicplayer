@@ -1,6 +1,6 @@
 {
 	"name": "music-player",
-	"description": "web music player",
+	"d0escription": "web music player",
 	"version": "0.0.1",
 	"author": {
 	  "name": "OhByeongYun",
@@ -13,8 +13,8 @@
 		}
 	],
 	"dependencies": {
-		//"http-proxy": "x.x.x"
-	    "express": "3.4.x"
+	    "express": "3.4.x",
+	    "jade": "1.0.x"
 	},
 	"engines": {
 		"node": "0.10.x",
