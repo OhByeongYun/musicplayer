@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+#audioplayer {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	min-width: 1000px;
+	bottom: 0;
+	background-color:#222;
+}
+
+#audioplayer .timeline {
+	position: absolute;
+	width: 100%;
+	height: 13px;
+	bottom: 0;
+	background-color: #333;
+}
+#audioplayer .timeline .played {
+	position: absolute;
+	height: 13px;
+	top: 0;
+	left: 0;
+	background-color: #42b6f8;
+}
+#audioplayer .timeline span {
+	position: absolute;
+	padding: 1px 5px;
+	color:#ddd;
+	font-size:8px;
+	font-style: italic;
+}
+#audioplayer .timeline span.start {
+	left: 0;
+	padding-left: 5px;
+}
+#audioplayer .timeline span.end {
+	right: 0;
+	padding-right: 5px;
+}
+
+#audioplayer .controller {
+	position: absolute;
+	width: 100%;
+	height: 37px;
+	top: 0;
+	letter-spacing: -1px;
+}
+#audioplayer .controller .nowplaying {
+	position: absolute;
+	height: 37px;
+	top: 0;
+	left: 0;
+	padding-right: 10px;
+	border-right: solid 1px #000;
+	cursor: pointer;
+}
+#audioplayer .controller .nowplaying .thumb {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	padding: 6px 15px 6px 8px;
+	float:left;
+}
+#audioplayer .controller .nowplaying .thumb img {
+	width: 25px;
+	height: 25px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#audioplayer .controller .nowplaying .title {
+	position: relative;
+	padding-right: 20px;
+	line-height: 37px;
+	color:#eee;
+	font-size: 20px;
+	font-weight: bold;
+	float:left;
+}
+#audioplayer .controller .nowplaying .artist {
+	position: relative;
+	padding-right: 5px;
+	top: 3px;
+	line-height: 37px;
+	color: #42b6f8;
+	font-size: 13px;
+	float: left;
+}
+#audioplayer .controller .nowplaying .album {
+	position: relative;
+	top: 4px;
+	line-height: 37px;
+	color: #bbb;
+	font-size: 12px;
+	float: left;
+}
+#audioplayer .controller .nowplaying .list {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	top: 3px;
+	background: url('/img/iconset.png') -210px 0 no-repeat;
+	background-size: 240px;
+	float: right;
+}
+#audioplayer .controller .controls {
+	position: absolute;
+	width: 250px;
+	height: 37px;
+	top: 0;
+	right: 0;
+}
+#audioplayer .controller .controls .control {
+	position: absolute;
+	width: 80px;
+	height: 37px;
+	right: 35px;
+}
+#audioplayer .controller .controls .control div {
+	background: url('/img/iconset.png') -9999px -9999px no-repeat;
+	background-size: 240px;
+	cursor: pointer;
+}
+#audioplayer .controller .controls .control .play {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 3px;
+	left: 26px;
+	background-position: 0 0;
+}
+#audioplayer .controller .controls .control .prev,
+#audioplayer .controller .controls .control .next {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 8px;
+}
+#audioplayer .controller .controls .control .prev {
+	left: 0;
+	background-position: -64px -5px;
+}
+#audioplayer .controller .controls .control .next {
+	right: 0;
+	background-position: -95px -5px;
+}
+#audioplayer .controller .controls .toggle {
+	position: absolute;
+	width: 80px;
+	height: 37px;
+	top: 8px;
+	right: 140px;
+}
+#audioplayer .controller .controls .toggle div {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url('/img/iconset.png') -9999px -9999px no-repeat;
+	background-size: 240px;
+	cursor: pointer;
+}
+#audioplayer .controller .controls .toggle .shuffle {
+	background-position: -154px -5px;
+	left: 30px;
+}
+#audioplayer .controller .controls .toggle .repeat {
+	background-position: -125px -5px;
+	right: 0;
+}
+#audioplayer .controller .controls .toggle .volume {
+	background-position: -185px -5px;
+	left: 0;
+}
