@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>OhByeongYun.me</title>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="/css/audioplayer.css">
+</head>
+<body>
+	<!-- #header -->
+	<div id="header">
+		<h1>ohbyeongyun.me</h1>
+	</div>
+	
+	<!-- #audioplayer [STATIC] -->
+	<!--
+	<div id="audioplayer">
+		<div class="controller">
+			<div class="nowplaying">
+				<div class="thumb">
+					<img src="/music/thumb/nosong.png">
+				</div>
+				<div class="title">
+					재생중인 곡이 없습니다
+				</div>
+				<div class="artist"></div>
+				<div class="album"></div>
+				<div class="list"></div>
+			</div>
+			<div class="controls">
+				<div class="control">
+					<div class="prev"></div>
+					<div class="play"></div>
+					<div class="next"></div>
+				</div>
+				<div class="toggle">
+					<div class="repeat"></div>
+					<div class="shuffle"></div>
+					<div class="volume"></div>
+				</div>
+			</div>
+		</div>
+		<div class="timeline">
+			<div class="played"></div>
+			<span class="start">00:00</span>
+			<span class="end">00:00</span>
+		</div>
+	</div>
+	-->
+	
+	<div id="audioWrap"></div>
+	
+	<!-- script -->
+	<script src="/js/media.js"></script>
+	<script>
+		var a = MusicPlayer("#audioWrap").init("#");
+		console.log(a);
+		/*
+		var mediaPlayer = MediaPlayer.init();
+		mediaPlayer.play({
+			'title': 'Love & Girls',
+			'artist': '소녀시대',
+			'album': '일본 정규2집 ~Girls&Peace~',
+			'src': '/music/Love & Girls.mp3'
+		});
+		*/
+	</script>
+</body>
+</html>
